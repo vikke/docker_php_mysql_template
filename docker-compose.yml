@@ -19,6 +19,7 @@ services:
       - "13306:3306"
 
   ubuntu:
+    container_name: ubuntu
     build: ./ubuntu
     volumes:
       - ./ubuntu/src:/var/www/laravel
